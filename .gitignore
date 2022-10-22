@@ -1,1 +1,9 @@
 *.pyc
+.venv/
+dist/
+.coverage
+coverage.xml
+.pytest_cache/
+.vim
+*.egg-info
+__pycache__
