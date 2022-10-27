@@ -8,6 +8,7 @@ def is_even():
         print('May I have your name? ', end='')
         name = input()
     print('Hello, ' + name)
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     score = 0
     while score < 3:
         random_number = randint(1, 100)
