@@ -16,7 +16,8 @@ def engine_game(game):
             print('Correct!')
             score = score + 1
         else:
-            print(f'\'{answer}\' is wrong answer ;(.Correct answer was \'{game_operation[1]}\'')
+            print(f'\'{answer}\' is wrong answer ;(.'
+                  f'Correct answer was \'{game_operation[1]}\'')
             print("Let's try again, " + name)
             break
     else:
