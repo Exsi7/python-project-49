@@ -16,6 +16,13 @@ def create_progression():
     return progression
 
 
+def quest_out(list):
+    question = ''
+    for char in list:
+        question = question + ' ' + str(char)
+    return question
+
+
 def game():
     progress = create_progression()
     lenght = len(progress) - 1
@@ -23,8 +30,9 @@ def game():
     question = []
     question.extend(progress)
     question[random_index] = '..'
+    question_out = quest_out(question)
     exp = str(progress[random_index])
-    return [question, exp]
+    return [question_out, exp]
 
 
 progression = [game_task, game]
