@@ -19,7 +19,7 @@ def create_progression():
 def quest_out(list):
     question = ''
     for char in list:
-        question = question + ' ' + str(char)
+        question = question + str(char) + ' '
     return question
 
 
